@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #8e8e8e5d;
+}
+
+.container {
+  background-color: #bebebead;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  width: 600px; /* Tamaño fijo para el contenedor */
+  height: 200px;
+  overflow: hidden; /* Para que el contenido adicional se oculte y no afecte el tamaño del contenedor */
+}
+
+.tab {
+  display: flex;
+  justify-content: center; /* Distribuye equitativamente las opciones */
+}
+
+.tab__tablink {
+  background-color: transparent;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  padding: 1rem;
+  transition: background-color 0.5s;
+  margin: 1rem 2rem;
+  width: 10rem;
+  box-shadow: 4px 4px 10px gray, -4px -4px 15px 4px white;
+  float: left;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.tab__tablink:hover {
+  background-color: rgba(149, 149, 149, 0.515);
+}
+
+.tabcontent {
+  padding: 0.5rem 0.8rem;
+  display: none;
+  background-color: #ababab5c;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.tabcontent.active {
+  display: block;
+}
+
+
+  
